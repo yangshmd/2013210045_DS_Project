@@ -25,6 +25,10 @@ int main(void)
 {
 	int selectMenu;
 
+	FILE* fp_word = fopen("word.txt", "rt");
+	FILE* fp_user = fopen("user.txt", "rt");
+	FILE* fp_friend = fopen("friend.txt", "rt");
+
 	while (TRUE)
 	{
 		PrintInterface();
@@ -57,4 +61,5 @@ int main(void)
 			break;
 		}
 	}
+
 }
