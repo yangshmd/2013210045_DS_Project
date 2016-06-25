@@ -1,0 +1,43 @@
+MANUAL
+
+1. Submit a git account
+- 계정 : yangshmd
+- 프로젝트 : 2013210045_DS_Project
+- 링크 : https://github.com/yangshmd/2013210045_DS_Project
+
+2. Commit source code displayimg menu
+- 링크 확인
+
+3. Commit the first draft of maual
+- Manual.txt 확인
+
+4. Read data files
+- 각각 user, tweet횟수, friends 횟수를 static 변수로 선언하여
+전역변수보다 더 안전하게 처리하였습니다.
+- delete하게되면 줄어든 결과를 이것에 반영되게 하였습니다.
+
+5. Statistics
+- 각각의 node를 모두 생성해 놨기 때문에 max, min 을 구하는 것은 어렵지 않았습니다.
+
+6. Top 5 most tweeted words
+- Top 5 를 구하는것이 조금 어려웠습니다. Top 5 를 구하려면, tweet 횟수를 바탕으로
+sorting을 해야 하는데, 구조체 안에 들어있는 int 변수를 대상으로 sorting을 진행해야
+해서, 그 구조체 형 포인터 배열을 동적을 할당하여 quickSort를 진행햐였습니다.
+
+7. Top 5 most tweeted users
+- Top 5 words와 마찬가지로, User형 포인터 배열을 동적할당하여 정렬시켰습니다.
+
+8. Find all users who mentioned a word
+- 처음에 Binary Search Tree를 이용하여 Search를 진행하는데, 자꾸 오류가 나서
+무엇이 문제인지 몰라 고생을 했습니다. 문제는 Search를 진행할 때 \n(개행)을 뒤에 
+넣어줘야 하는데 이 부분을 빼먹어서 자꾸 실행오류가 났었습니다.
+- main에서 word를 입력받아서 tweet.c의 함수에서 진행햐였습니다.
+
+9. Find all users who are friend of the above user
+- 앞에서 진행된 user를 바탕으로 그 친구들을 모두 찾는것입니다. 이는 user 정보를 
+main의 while(TRUE) loop 밖에 temp 형식으로 빼놨기 때문에 유지가 되서 가능합니다.
+- 마찬가지로 tweet.c에 있는 함수에서 진행하였습니다.
+
+10. Top 5 strongly connected components
+
+11. Find shortest path from a user(id)

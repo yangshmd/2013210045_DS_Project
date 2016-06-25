@@ -1,15 +1,34 @@
 Self_Evaluation_Form
 
-1. Submit a git account
+1. Submit a git account (10)
+- 10점
 
-- 계정 : yangshmd
-- 프로젝트 : 2013210045_DS_Project
-- 링크 : https://github.com/yangshmd/2013210045_DS_Project
+2. Commit source code displayimg menu (10)
+- 10점
 
-2. Commit source code displayimg menu
+3. Commit the first draft of maual (10)
+- 10점
 
-- 링크 확인
+4. Read data files (20)
+- 20점
 
-3. Commit the first draft of maual
+5. Statistics (20)
+- 20점
 
-- Manual.txt 확인
+6. Top 5 most tweeted words (10)
+- 10점
+
+7. Top 5 most tweeted users (5)
+- 5점
+
+8. Find all users who mentioned a word (10)
+- 10점
+
+9. Find all users who are friend of the above user (5)
+- 5점
+
+10. Top 5 strongly connected components (10)
+- 0점
+
+11. Find shortest path from a user(id) (10)
+- 0점
