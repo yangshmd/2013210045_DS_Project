@@ -1,0 +1,15 @@
+Self_Evaluation_Form
+
+1. Submit a git account
+
+- 계정 : yangshmd
+- 프로젝트 : 2013210045_DS_Project
+- 링크 : https://github.com/yangshmd/2013210045_DS_Project
+
+2. Commit source code displayimg menu
+
+- 링크 확인
+
+3. Commit the first draft of maual
+
+- Manual.txt 확인

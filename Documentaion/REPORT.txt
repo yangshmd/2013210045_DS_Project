@@ -1,14 +1,26 @@
-자료구조 프로젝트 ? Twitter Project
-컴퓨터학과
-2013210045
-양승호
+자료구조 프로젝트 - Twitter Project
+					컴퓨터학과
+					2013210045
+					양승호
 
 1. Data Structure
-- Word형 구조체(노드)와 User 구조체(노드)를 따로 만들었고, 각각 Balancing 된 Binary Search Tree인 AVL 트리를 사용하였습니다. 트리의 key 값으로는, Word형 구조체의 트리에는 Word 자체를 string으로 알파벳 순으로 키 값으로 사용하였고, (중복은 Word tweet 횟수를 늘리는 방향으로 예외처리를 하였습니다.) User 구조체는 각 고유 ID인 ID등록번호를 key값으로 사용했습니다. 노드 구조체를 따로 분리한 이유는, Word 구조체 안에 User 정보를 모두 담거나, User 구조체 안에 Word 정보를 모두 담아 처리하기가 쉽지 않았기 때문입니다. 또한 tweet을 많이 한 ID를 찾거나, 많이 tweet 된 word를 찾기 위해서 각각의 구조체형 포인터 배열을 동적으로 할당하였습니다. 이렇게 만든 배열을 각각의 횟수를 기저로 Quick Sort를 진행하여 Top 5 most 를 도출했습니다.
+- Word형 구조체(노드)와 User 구조체(노드)를 따로 만들었고, 각각 Balancing 된 Binary Search Tree인 AVL 트리를 사용하였습니다.
+ 트리의 key 값으로는, Word형 구조체의 트리에는 Word 자체를 string으로 알파벳 순으로 키 값으로 사용하였고, (중복은 Word tweet 
+횟수를 늘리는 방향으로 예외처리를 하였습니다.) User 구조체는 각 고유 ID인 ID등록번호를 key값으로 사용했습니다. 노드 구조체를 따로 
+분리한 이유는, Word 구조체 안에 User 정보를 모두 담거나, User 구조체 안에 Word 정보를 모두 담아 처리하기가 쉽지 않았기 때문입니다.
+ 또한 tweet을 많이 한 ID를 찾거나, 많이 tweet 된 word를 찾기 위해서 각각의 구조체형 포인터 배열을 동적으로 할당하였습니다. 
+이렇게 만든 배열을 각각의 횟수를 기저로 Quick Sort를 진행하여 Top 5 most 를 도출했습니다.
 - 또한 친구 관계도, User 구조체 안에 User 구조체 형 포인터 배열을 선언하여, 자신이 보유한 친구 User들의 포인터를 저장할 수 있도록 하였습니다.
 
 2. Expected Performance
-- Word와 User 모두 균형 잡힌 Binary Search Tree를 사용하기 때문에, 탐색과 관련한 부분에서는 O(logn)의 성능을 보입니다. 다만, file에서 데이터를 한 줄씩 모두 읽어 오기 때문에, O(n)의 time complexity가 예상됩니다.
+- Word와 User 모두 균형 잡힌 Binary Search Tree를 사용하기 때문에, 탐색과 관련한 부분에서는 O(logn)의 성능을 보입니다. 
+다만, file에서 데이터를 한 줄씩 모두 읽어 오기 때문에, O(n)의 time complexity가 예상됩니다.
+- 저장과 삭제 또한 Binary Search Tree를 바탕으로 구현되기 떄문에 O(logn)의 성능이 기대됩니다.
+- Word와 User 구조체를 두개 선언하여, 각각 BST를 만드는 함수들을 따로 만들어야 해서 어려움은 있었지만,
+하나의 구조체로 묶는것 보다 관리가 용이합니다.
 
 3. How would I improve the system in the future.
-- 
+- 콘솔로 입, 출력 이 아니라, GUI를 이용해서 클릭 등으로 할수 있게 해보고 싶습니다. 또한 Web과 연동하여 실제로 동작하도록 하는 것은
+어떻게 구현되는지 궁금하고 직접 해 보고 싶습니다.
+- 저장, 탐색, 삭제와 관련한 time complexity는 O(nlogn)이면 만족합니다.. 더 줄이기는 쉽지 않을 것 같습니다.
+
