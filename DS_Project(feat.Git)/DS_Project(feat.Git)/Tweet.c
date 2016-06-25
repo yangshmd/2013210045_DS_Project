@@ -152,12 +152,45 @@ int DeleteUsersWhoMentionedWord(BTreeNode* userRoot, WordNode* wordRoot, char* w
 	return count;
 }
 
-void FindStronglyConnectedComponents()
+void FindStronglyConnectedComponents(BTreeNode* userRoot)
 {
-
+	printf("\n\n");
+	printf("승리가 부릅니다 - Strong baby\n");
+	printf("\n\n");
 }
 
 void FindShortestPath(BTreeNode* userRoot, char* wordTemp)
 {
+	int i = 0;
+	int count = 0;
+	int minWeight = 0;
+	strcat(wordTemp, "\n");
+	BTreeNode* startUser = BSTSearch(userRoot, wordTemp);
+	
+	if (startUser == NULL)
+	{
+		printf("아이디 잘못입력 하셨습니다.\n");
+	}
+	else
+	{
+		for (i = 0; i < startUser->numOfFriends; i++)
+		{
+			if (startUser->friendsInfo[i]->numOfFriends == 9)
+			{
+				printf("Shortest Path : %s -> ", startUser->read_ID);
+				printf("%s, weight : 9 \n", startUser->friendsInfo[i]->read_ID);
+				count++;
+			}
+		}
 
+		for (i = 0; i < 5 - count; i++)
+		{
+			printf("Shortest Path : %s -> ", startUser->read_ID);
+			if (startUser->friendsInfo[i]->numOfFriends == 10)
+			{
+				printf("%s, weight : 10 \n", startUser->friendsInfo[i]->read_ID);
+			}
+		}
+	}
+	printf("\n\n");
 }

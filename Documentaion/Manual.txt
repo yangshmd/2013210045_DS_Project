@@ -39,5 +39,13 @@ main의 while(TRUE) loop 밖에 temp 형식으로 빼놨기 때문에 유지가 되서 가능합니다.
 - 마찬가지로 tweet.c에 있는 함수에서 진행하였습니다.
 
 10. Top 5 strongly connected components
+- 너무 어렵습니다..ㅠㅠ
 
 11. Find shortest path from a user(id)
+- 이미 노드들로 Friends 정보와 weight를 의미하는 numOfFriends가 저장되 있기 때문에
+Dijkstra 알고리즘만 활용하면 구할 수 있을것 같습니다.
+- 하지만 알고리즘을 제대로 구현하는게..아직 너무 어려워서 중도 포기 하였습니다.
+- 모든 user들은 친구가 9명 아니면 10명 이므로, 친구가 9명 있는 놈들을 계속 연결하면
+shortest path를 찾을 수 있을 것 같습니다.
+- 제일 짧은 애들 5명 이므로, given user의 friend가 가지고 있는 친구들 중 9명의 친구를 가지고
+있는 친구가 있으면 걔가 1등이고, 나머지는 10명의 친구를 갖는 공동 2등입니다.

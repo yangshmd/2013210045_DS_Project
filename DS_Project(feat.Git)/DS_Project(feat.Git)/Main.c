@@ -203,7 +203,7 @@ int main(void)
 			totalUsers -= DeleteUsersWhoMentionedWord(userRoot, wordRoot, wordTemp);
 			break;
 		case 8:
-
+			FindStronglyConnectedComponents(userRoot);
 			break;
 		case 9:
 			printf("\n* Input Given User: ");

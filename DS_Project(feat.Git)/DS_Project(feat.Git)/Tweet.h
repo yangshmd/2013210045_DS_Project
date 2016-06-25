@@ -18,5 +18,5 @@ void FindAllFriendsAboveUsers(WordNode* wordRoot, char* wordTemp, int flag);
 int DeleteAllMentionsOfWord(WordNode* wordRoot, char* wordTemp);
 int DeleteUsersWhoMentionedWord(BTreeNode* userRoot, WordNode* wordRoot, char* wordTemp);
 
-void FindStringlyConnectedComponents();
-void FindShortestPath(BTreeNode* userRoot, char* wordTemp
+void FindStronglyConnectedComponents(BTreeNode* userRoot);
+void FindShortestPath(BTreeNode* userRoot, char* wordTemp);
