@@ -25,9 +25,7 @@ int main(void)
 
 	char temp[STR_LEN];
 	char ID_temp[STR_LEN];
-
 	
-
 	FILE* fp_word = fopen("word.txt", "rt");
 	FILE* fp_user = fopen("user.txt", "rt");
 	FILE* fp_friend = fopen("friend.txt", "rt");
@@ -112,56 +110,6 @@ int main(void)
 		curLine++;
 	}
 
-	/*tempNode1 = BSTSearch1(wordRoot, "열심히\n");
-	printf("%s", tempNode1->whoTweeted[0]->read_ID);*/
-		
-	// data에 엔터까지 저장되는구나
-
-	//tempNode1 = BSTSearch1(wordRoot, "열심히\0");
-	
-	/*BTreeNode* ttttt;
-	ttttt = BSTSearch(userRoot, "108603824");
-	if (ttttt == NULL)
-		printf("XX\n");
-	else
-		printf("numOfTweets: %d\n", ttttt->numOfTweets);*/
-	/*char wordTemp[500] = "도서관을";
-	BTreeNode* searchUserTemp;
-	WordNode* searchWordTemp;
-
-	searchWordTemp = BSTSearc*h1(wordRoot, wordTemp);
-//	printf("%s\n", searchWordTemp->data);
-
-	//BSTShowAll(userRoot);
-	/*searchUserTemp = BSTSearch(userRoot, "108902649");
-	if (searchUserTemp == NULL)
-		printf("can't find\n");
-	else*/
-		//printf("%s\n", userRoot->read_ID);
-
-//	printf("%d\n", wordNodeCount);
-	//printf("%d\n", wordNodeCount);
-	//printf("%d\n", arr1[4730]->numOfTweeted);
-	//BSTShowAll1(wordRoot);
-	//BSTShowAll(userRoot);
-	
-	//for (i = 0; i < wordNodeCount; i++)
-	//{
-	//	printf("%d ", arr1[i]->numOfTweeted);
-	//}
-
-	//TopFiveWords(arr1, wordNodeCount);
-
-	//ReadDataFiles(totalUsers, totalFriendship, totalTweets);
-
-	//ShowStatistics(userRoot, wordRoot);
-
-//	TopFiveUsers(arr, totalUsers);
-	//FindUsersWhoTweetedWord(wordRoot, "열심히");
-
-	//printf("%s\n", wordRoot->whoTweeted[0]->read_ID);
-	
-	
 	/* Select Menu */
 	char wordTemp[500];
 	while (TRUE)
@@ -214,7 +162,6 @@ int main(void)
 			return 0;
 		}
 	}	
-
 
 	fclose(fp_word);
 	fclose(fp_friend);

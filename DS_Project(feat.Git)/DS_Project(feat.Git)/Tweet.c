@@ -47,7 +47,6 @@ void TopFiveWords(WordNode* arr1[], int wordNodeCount)
 {
 	int i;
 	printf("\n\n=========================================\n");
-	// 왜 -1 하면 오류나고 -70부터(4660정도부터) 되는지.. 파악하기
 	QuickSort1(arr1, 0, wordNodeCount - 1);
 	for (i = wordNodeCount - 1; i >= wordNodeCount - 5; i--)
 	{
@@ -155,7 +154,7 @@ int DeleteUsersWhoMentionedWord(BTreeNode* userRoot, WordNode* wordRoot, char* w
 void FindStronglyConnectedComponents(BTreeNode* userRoot)
 {
 	printf("\n\n");
-	printf("승리가 부릅니다 - Strong baby\n");
+	printf("잘모르겠습니다..\n");
 	printf("\n\n");
 }
 
